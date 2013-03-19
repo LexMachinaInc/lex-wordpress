@@ -1,0 +1,689 @@
+/* @override 
+	http://wordpress.lexmachina.com/wp-content/themes/lexmachina/style.css */
+
+/*
+Theme Name: Lex Machina
+Description: Design for lexmachina.com
+Author: Gavin Carothers
+Template: boilerplate
+*/
+
+
+/* Typography 
+============================================= */
+
+	body { line-height: 1.4em; }
+	
+	p {
+		max-width: 34.5em;
+	}
+
+	html, button, input, select, textarea {
+    	font-family: "pragmatica-web", sans-serif;
+    	color:#888888;
+    	}
+
+    h1, h2, h3, h4, h5, h6, h7 {
+    	font-family: "minerva-modern",sans-serif;
+    	color: #36b0e3;
+    	}
+
+    h1 { text-transform: uppercase; }
+
+	h2 {
+		padding-bottom: .25em;
+    	border-bottom: 2px solid #36b0e3;
+    	font-weight: normal;
+    	font-style: normal;
+    	}
+    blockquote p {
+	    font-style: italic;
+    }
+
+/* #Images
+================================================== */
+
+	img { max-width: 100%; }
+	.roundedImg {
+		-moz-border-radius: .25em;
+		-webkit-border-radius: .25em;
+		border-radius: .25em;
+		}
+
+/* #Links
+================================================== */
+
+	a {
+		text-decoration: underline;
+		color: #646464;
+		font-weight: bold;
+		}
+
+	a:visited { color: #646464; }
+	a:hover, a:focus { color: #646464; }
+
+
+/* Buttons
+================================================== */
+	.button {
+		background: #eee;
+		border: 1px solid #eee;
+		-moz-border-radius: .25em;
+		-webkit-border-radius: .25em;
+		border-radius: .25em;
+		color: #444;
+		display: inline-block;
+		font-size: 12px;
+		font-weight: bold;
+		text-decoration: none;
+		text-shadow: 0 1px rgba(255, 255, 255, .75);
+		cursor: pointer;
+		margin-bottom: 1.25em;
+		line-height: normal;
+		padding: .5em .75em;
+	}
+	
+	.button:hover {
+		color: #222;
+		background: #ddd; /* Old browsers */
+		border: 1px solid #888;
+		border-top: 1px solid #aaa;
+		border-left: 1px solid #aaa; }
+
+	.button:active {
+		border: 1px solid #666;
+		background: #ccc; /* Old browsers */
+		}
+
+/* Featured Image
+================================================== */
+
+	div.featured-image {
+    	min-height: 280px;
+    	overflow: hidden;
+    	}
+
+    div.featured-image img {
+    	max-width:100%;
+    	}
+
+/* Login
+================================================= */
+	.login {
+		position: absolute;
+		margin-top: -35px;
+		padding: .75em;
+		font-size: 1.125em;
+	}
+
+/* Header
+================================================= */
+
+.navbar-inner {
+	background: white;
+}
+
+.banner > div {
+	margin-bottom: -1.25em;
+}
+
+#page > header {
+	margin: 0 6.25%;
+}
+
+#page > header > div > h1 {
+    margin-bottom: 0;
+}
+
+#page > header > div > h1 > a {
+    background: url(lexMachina_logo.png) no-repeat;
+    width: 254px;
+    display: block;
+    text-indent: 100%;
+    white-space: nowrap;
+    height: 30px;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+#page > header > div > p {
+    margin: 0;
+    font-family: "minerva-modern",sans-serif;
+    font-style: italic;
+    padding-left: 38px;
+}
+
+/* Access
+================================================== */
+	#access {
+    	text-align: left;
+    	border-bottom: 4px solid #36b0e3;
+    	padding-bottom: .5em; 
+    	}
+
+    #access:after {
+	    content: ".";
+	   	display: block;
+	   	clear: both;
+	   	visibility: hidden;
+	   	line-height: 0;
+	   	height: 0;    
+	   	}
+
+	a#skip { 
+    	position:absolute; 
+    	left:-10000px; 
+    	top:auto; 
+    	width:1px; 
+    	height:1px; 
+    	overflow:hidden;
+    } 
+ 
+    a#skip:focus { 
+    	position:static; 
+    	width:auto; 
+    	height:auto; 
+    	} 
+
+/* Menu
+======================================== */
+
+	.menu {
+		list-style: circle;
+		}
+
+	.menu > li {
+		display: inline;
+	}
+	
+	.menu-header {
+		padding-right: 6.25%;
+	}
+
+	#menu-main-navigation {
+    	float:right;
+    	margin-right: 1.70em;
+    	}
+
+    #menu-main-navigation > ul > a:hover {
+		text-decoration: none;
+		}
+
+	#menu-main-navigation > li {
+    	float:left;
+    	position:relative;
+    	padding-right: 8px;
+    	font: 700 15pt "minerva-modern",sans-serif;
+    	padding-left: 8px;
+    	/* border-right: 1px solid #bab9b9; */
+    	text-transform: uppercase;
+    	}
+
+    #menu-item-37 {
+    	border-right-style: none !important;
+    	}
+
+    #menu-main-navigation > li a {
+    	color: #5b5b5b;
+    	padding-bottom: 05px;
+    	text-decoration: none;
+    	-webkit-transition: color 0.3s ease-in-out;
+    	-moz-transition: color 0.3s ease-in-out;
+    	-o-transition: color 0.3s ease-in-out;
+    	transition: color 0.4s ease-in-out;
+    	
+    	}
+
+    #menu-main-navigation > li a:hover {
+    	color: #36B0E3;
+    	text-decoration: none !important;    	
+    	}
+
+    .blog #menu-item-100 a {
+	  color: #36B0E3;
+	  border-bottom: 4px solid #36B0E3;
+    }
+    .page-id-25 #menu-item-404 a {
+	  color: #36B0E3;
+	  border-bottom: 4px solid #36B0E3;
+    }
+
+    .page-id-8 #menu-item-48 a {
+	  color: #36B0E3;
+	  border-bottom: 4px solid #36B0E3;
+    }
+    
+    .page-id-27 #menu-item-41 a {
+	  color: #36B0E3;
+	  border-bottom: 4px solid #36B0E3;
+    }
+    
+    .page-id-369 #menu-item-371 a {
+	  color: #36B0E3;
+	  border-bottom: 4px solid #36B0E3;
+    }
+    
+    .page-id-34 #menu-item-37 a {
+	  color: #36B0E3;
+	  border-bottom: 4px solid #36B0E3;
+    }
+    
+/* Content and aside containers
+================================================== */
+
+	#content {
+		margin: 4em 0;
+		}
+
+	#content > aside {
+		max-width: 31.25%;
+		margin: 0 0 0 68.75%;
+		position: relative;
+		padding-right: 10px;
+	}
+
+
+/* Sidebar
+============================== */
+
+aside > ul {
+	list-style: none;
+}
+
+aside > ul > li > ul {
+	list-style: none;
+	text-decoration: none;
+	margin-left: -39px;
+}
+
+aside > ul > li > ul > li {
+	margin-bottom: 1em;
+	font-size: 14px;
+}
+
+aside > ul > li > ul > li > a {
+	text-decoration: none;
+}
+
+/* Nav
+============================== */
+	#nav-above {
+		display: none;
+	}
+	
+
+p.no-comments {
+	display: none;
+}
+
+
+
+/* Site Footer
+======================================= */
+
+	.siteFooter {
+    	background-color: #cccccc;
+    	height: 100px;
+    	clear: both;
+    	position: relative;
+    	bottom: 0;
+    	left: 0;
+    	right: 0;
+    	}
+    	
+    .siteFooter ul {
+    	margin-top: 2em;
+    	max-height: 100%; 
+    	float: left;
+	    display: inline-block;
+	    margin-left: 1.041667%;
+	    margin-right: 1.041667%;
+    }
+    
+    .siteFooter ul:nth-child(2) {
+	    float: right;
+	    margin-right: 5em;
+    }
+    	
+    #nav_menu-2 > h3 { display: none;}
+    
+    #menu-main-navigation-1 { margin: 0; }
+    
+    .siteFooter > ul { list-style: none; }
+
+	.siteFooter > ul >li { display: inline-block; }
+
+
+/* #Page Styles
+================================================== 
+================================================== */
+
+
+/* #Home Page
+================================================== */
+
+	
+	.home #page #content > h1 { display: none; }  /* hake to supress page title until theme is edited */
+	
+	#content > p:last-child { display: none; } /* hack to supress comments till theme is editid */
+	
+	.homeBottom { 
+		background: #f7f7f7; 
+		padding: 1em;
+		border-radius: .5em;}
+		
+	.homeBottomBoxes header h1 { 
+		font-size: 1.25em;
+		border-bottom: solid 2px;}
+	.homeBottomBoxes img { display: none; }
+	
+
+/* #Product Page
+================================================== */
+
+	/* .page-id-8 #page #content > h1 { display: none; } */
+	
+	.page-id-8 > #page > #content > h1 { display: none; }
+	.page-id-8 section#content section ul li { margin-bottom: 1.5em; }
+
+	.page-id-8 section#content section img {
+    	/* margin: .5em; */
+    	-moz-box-shadow: 0px 5px 7px #888;
+    	-webkit-box-shadow: 0px 5px 7px #888;;
+    	box-shadow: 0px 5px 7px #888;
+    	}
+    	
+    .product {margin-bottom: 3em; }
+    .product p { 
+    	font-size: 1.125em; 
+    	line-height: 1.38888888;
+    	max-width: 34em;
+    	}
+    .product div h2 { text-transform: uppercase; }
+    .alignRight {text-align: right;} /* once i'm done consider foleding these together */
+    .floatRight { float: right; }
+
+/* @end */
+
+
+/* #Reports Page
+================================================== */
+	
+	.page-id-369 .container > #content > h1 { display: none; }
+	.report { margin-bottom: 4em; }
+	.report div h1 { 
+		border-bottom: solid 2px #36B0E3; 
+		padding-bottom: .25em;
+		}
+
+
+/* #Team Page
+================================================== */
+
+	.page-id-27 > .container > #content > h1 { display: none; }
+	.page-id-27 h2 { border: none; }
+	
+	.page-id-27 > .container > #content > section > div h3 {
+		margin: .5em 0;
+	}
+	
+	.page-id-27 > .container > #content > section > div h4 {
+		margin: .5em 0;
+	}
+	
+	.staff section {
+		max-height: 18em;
+	}
+
+    #staff section hgroup { margin-top: 12px; }
+
+    #staff section hgroup > * {
+	    margin: 0;
+	    font-weight: normal;
+	    font-style: normal;
+	    }
+
+	#staff section h3 { text-transform: uppercase; }
+
+	#staff section h4 { color: #646464; }
+
+	#staff > section {
+    	float: left;
+    	margin: 1em;
+    	}
+    
+    .advisors section p { padding-left: 2em;}
+    .investors section p { padding-left: 2em;}
+    .investors h2, .advisors h2 {
+	    border-bottom: 2px solid;
+	    margin-bottom: .25em;
+	    text-transform: uppercase;
+    }
+
+/* @end */
+
+
+/* #About
+================================================== */
+	.page-id-25 #content > h1 { display: none; }
+	.about section { margin-bottom: 3em; }
+	.biggerParagraph {
+		font-size: 1.25em;
+		line-height: 1.38888888em;
+	}
+
+
+	.contact {
+		font-size: 1.25em;
+		line-height: 1.38888888em;
+	}
+	.contact a {
+		text-decoration: none;
+	}
+
+/* #Blog Posts
+================================================== */
+
+	/* Blog
+	============================================= */
+
+		
+		.post {
+			padding-bottom: 2em;
+			float: left;
+			display: inline;
+			margin-left: 1.041667%;
+			margin-right: 1.041667%;
+			width: 60.416667%;
+			}
+
+		.post > h2 { border: none; }
+
+		.post > h2 > a {
+			text-decoration: none;
+			color: #36B0E3;
+			}
+			
+		.meta-prep { display: none; } /* should just pull out of template */
+		.meta-prep-author { display: none; } /* should just pull out of template */
+		.entry-date a { text-decoration: none; }
+		.meta-sep { display: none; }  /* should just pull out of template */
+		.post .author {display: none; }
+	
+		#nav-below {
+			float: left;
+			width: 62.50%;
+			display: inline;
+			margin: 3em 0 3em 12.5%;
+		}
+	
+		#nav-below { margin-left: 12.5%; }
+		#nav-below a { margin-right: 12.5%; }
+		#nav-below a { margin-top: 12.5%; }
+		#nav-below a { text-decoration: none; }
+		
+		.category-academic > .entry-utility { display: none; }
+
+		
+	
+	/* Single Post
+	============================================= */
+
+	.entry-content h2 {
+		padding-bottom: .5em;
+	}
+	
+	.entry-content > p {
+		font-size: 1.125em; /* 18 / 16 = 1.125 em */
+		line-height: 26px; 
+		}
+		
+	.single-post > #page > #content > p { display: none; } /* remove comments text form blog pages */
+	
+	
+	
+	
+	.nav-previous a, .nav-next a { text-decoration: none; }
+	.nav-previous { margin-bottom: 2em;}
+	
+
+/* #Media Querries
+================================================== */
+/* @beep's target screen widths to consider when designing responsively 320, 480, 600, 768, 1024, 1200. #aea */
+	
+	/* Large screens */
+	@media only screen and (min-width : 1824px) {
+		
+		body {
+			font-size: 1.75em;
+			line-height: 1.35em;
+		}
+		.homeBottomBoxes p {
+			font-size: .75em;
+		}
+		
+	}
+
+/* #carousel
+================================================== */
+
+	#myCarousel { min-height: 20em; }
+	
+	.carousel-control { text-decoration: none; }
+	
+	.carousel {
+  position: relative;
+  margin-bottom: 18px;
+  line-height: 1;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel .item {
+  position: relative;
+  display: none;
+  -webkit-transition: 0.6s ease-in-out left;
+     -moz-transition: 0.6s ease-in-out left;
+      -ms-transition: 0.6s ease-in-out left;
+       -o-transition: 0.6s ease-in-out left;
+          transition: 0.6s ease-in-out left;
+}
+
+.carousel .item > img {
+  display: block;
+  line-height: 1;
+}
+
+.carousel .active,
+.carousel .next,
+.carousel .prev {
+  display: block;
+}
+
+.carousel .active {
+  left: 0;
+}
+
+.carousel .next,
+.carousel .prev {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.carousel .next {
+  left: 100%;
+}
+
+.carousel .prev {
+  left: -100%;
+}
+
+.carousel .next.left,
+.carousel .prev.right {
+  left: 0;
+}
+
+.carousel .active.left {
+  left: -100%;
+}
+
+.carousel .active.right {
+  left: 100%;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 40%;
+  left: 15px;
+  width: 40px;
+  height: 40px;
+  margin-top: -20px;
+  font-size: 60px;
+  font-weight: 100;
+  line-height: 30px;
+  color: #ffffff;
+  text-align: center;
+  background: #222222;
+  border: 3px solid #ffffff;
+  -webkit-border-radius: 23px;
+     -moz-border-radius: 23px;
+          border-radius: 23px;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+.carousel-control.right {
+  right: 15px;
+  left: auto;
+}
+
+.carousel-control:hover {
+  color: #ffffff;
+  text-decoration: none;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+
+.carousel-caption {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 10px 15px 5px;
+  background: #333333;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.carousel-caption h4,
+.carousel-caption p {
+  color: #ffffff;
+}
+	
+	
+	
+	
